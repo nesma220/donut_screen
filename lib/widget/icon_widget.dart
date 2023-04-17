@@ -1,5 +1,6 @@
 import 'package:donut_app_ui/model/icon_model.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class IconWidget extends StatelessWidget {
   const IconWidget({super.key});
@@ -17,8 +18,8 @@ class IconWidget extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Container(
-                width: 60,
-                height: 60,
+                width: 60.w,
+                height: 60.h,
                 margin: const EdgeInsets.only(left: 20, right: 10),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20),
@@ -27,18 +28,18 @@ class IconWidget extends StatelessWidget {
                 child: IconButton(
                   onPressed: () {},
                   icon: SizedBox(
-                    height: 30,
-                    width: 30,
+                    height: 30.h,
+                    width: 30.w,
                     child: Image.asset(ListIconData[index].imageIcon),
                   ),
                 ),
               ),
-              const SizedBox(
-                height: 8,
+               SizedBox(
+                height: 8.h,
               ),
               Text(
                 ListIconData[index].name,
-                style: const TextStyle(fontSize: 14),
+                style:  TextStyle(fontSize: 14.sp),
               ),
             ],
           );

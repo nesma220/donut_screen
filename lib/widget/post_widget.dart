@@ -1,6 +1,7 @@
 // ignore_for_file: non_constant_identifier_names
 
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class PostWidget extends StatelessWidget {
   PostWidget(
@@ -30,13 +31,13 @@ class PostWidget extends StatelessWidget {
       child: Stack(
         children: [
           Container(
-            height: 260,
-            width: 180,
+            height: 260.h,
+            width: 180.w,
             decoration: BoxDecoration(
                 color: colors[colorIndex],
                 borderRadius: BorderRadius.circular(10)),
             child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 10),
+              padding:  EdgeInsets.symmetric(horizontal: 10.w),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -49,12 +50,12 @@ class PostWidget extends StatelessWidget {
                   ),
                   Text(
                     NamePost,
-                    style: const TextStyle(
-                        fontSize: 18, fontWeight: FontWeight.bold),
+                    style:  TextStyle(
+                        fontSize: 18.sp, fontWeight: FontWeight.bold),
                   ),
-                  const Text(
+                   Text(
                     'Dunkin\'s',
-                    style: TextStyle(fontSize: 12, color: Colors.grey),
+                    style: TextStyle(fontSize: 12.sp, color: Colors.grey),
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -62,10 +63,10 @@ class PostWidget extends StatelessWidget {
                       IconButton(
                           onPressed: () {},
                           icon: const Icon(Icons.favorite_border_outlined)),
-                      const Text(
+                       Text(
                         'Add',
                         style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 16),
+                            fontWeight: FontWeight.bold, fontSize: 16.sp),
                       )
                     ],
                   )
@@ -76,8 +77,8 @@ class PostWidget extends StatelessWidget {
           Positioned(
             right: 0,
             child: Container(
-              height: 40,
-              width: 60,
+              height: 40.h,
+              width: 60.w,
               decoration: BoxDecoration(
                   color: const Color.fromARGB(255, 210, 231, 253),
                   borderRadius: BorderRadius.circular(10)),

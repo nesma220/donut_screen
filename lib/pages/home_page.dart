@@ -2,6 +2,7 @@ import 'package:donut_app_ui/model/post_model.dart';
 import 'package:donut_app_ui/widget/icon_widget.dart';
 import 'package:donut_app_ui/widget/post_widget.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -13,7 +14,7 @@ class HomePage extends StatelessWidget {
         backgroundColor: Colors.transparent,
         elevation: 0,
         leading: IconButton(
-            padding: const EdgeInsets.symmetric(horizontal: 29, vertical: 20),
+            padding:  EdgeInsets.symmetric(horizontal: 29.w, vertical: 20.h),
             onPressed: () {},
             icon: Icon(
               Icons.menu,
@@ -22,7 +23,7 @@ class HomePage extends StatelessWidget {
             )),
         actions: [
           IconButton(
-            padding: const EdgeInsets.symmetric(horizontal: 29, vertical: 20),
+            padding:  EdgeInsets.symmetric(horizontal: 29.w, vertical: 20.h),
             onPressed: () {},
             icon: Icon(
               Icons.person,
@@ -33,26 +34,26 @@ class HomePage extends StatelessWidget {
         ],
       ),
       body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 18),
+        padding:  EdgeInsets.symmetric(horizontal: 16.w, vertical: 18.h),
         child: SizedBox(
-          height: 700,
+          height: 700.h,
           child: Column(
             children: [
               Row(
-                children: const [
+                children:  [
                   Text(
                     'I Want to ',
-                    style: TextStyle(fontSize: 24),
+                    style: TextStyle(fontSize: 24.sp),
                   ),
                   Text(
                     'Eat',
                     style:
-                        TextStyle(fontSize: 24, fontWeight: FontWeight.w900),
+                        TextStyle(fontSize: 24.sp, fontWeight: FontWeight.w900),
                   ),
                 ],
               ),
-              const SizedBox(
-                height: 30,
+               SizedBox(
+                height: 30.sp,
               ),
               const IconWidget(),
               const SizedBox(
